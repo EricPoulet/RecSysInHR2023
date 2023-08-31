@@ -1,74 +1,24 @@
-# Data analysis
-- Document here the project: RecSys_push
-- Description: Project Description
-- Data Source:
-- Type of analysis:
+# Contexts:
 
-Please document the project the better you can.
+This code is the implementation of 'Tackling Cold Start For Job Recommendation With
+Heterogeneous Graphs'
 
-# Startup the project
+# Instructions:
 
-The initial setup.
+You can use the script by running:
+python main.py name_of_the_experiment -1
 
-Create virtualenv and install the project:
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv ~/venv ; source ~/venv/bin/activate ;\
-    pip install pip -U; pip install -r requirements.txt
-```
+the second argument is the feature you want to suppress
+- 1 take everything
+- 10 take only job candidate
 
-Unittest test:
-```bash
-make clean install test
-```
-
-Check for RecSys_push in gitlab.com/{group}.
-If your project is not set please add it:
-
-- Create a new project on `gitlab.com/{group}/RecSys_push`
-- Then populate it:
-
-```bash
-##   e.g. if group is "{group}" and project_name is "RecSys_push"
-git remote add origin git@github.com:{group}/RecSys_push.git
-git push -u origin master
-git push -u origin --tags
-```
-
-Functionnal test with a script:
-
-```bash
-cd
-mkdir tmp
-cd tmp
-RecSys_push-run
-```
-
-# Install
-
-Go to `https://github.com/{group}/RecSys_push` to see the project, manage issues,
-setup you ssh public key, ...
-
-Create a python3 virtualenv and activate it:
-
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv -ppython3 ~/venv ; source ~/venv/bin/activate
-```
-
-Clone the project and install it:
-
-```bash
-git clone git@github.com:{group}/RecSys_push.git
-cd RecSys_push
-pip install -r requirements.txt
-make clean install test                # install and test
-```
-Functionnal test with a script:
-
-```bash
-cd
-mkdir tmp
-cd tmp
-RecSys_push-run
-```
+- 0 for no skill
+- 1 for no contract
+- 2 for no origin
+- 3 for no exp
+- 4 for no salary
+- 5 for no_zip
+- 6 for no_category
+- 7 for no_recruiter
+- 8 for no_company
+- 9 for no_skill category (esco/wiki)
